@@ -9,6 +9,15 @@ st.set_page_config(page_title='Pakistan Environmental Issues', layout='wide')
 
 st.title('Pakistan Environmental Issues Dashboard')
 
+st.markdown("""
+
+.main {background-color: #f0f2f6;}
+h1 {color: #1f4e79; text-align: center;}
+
+""", unsafe_allow_html=True)
+
+st.title('🌍 Pakistan Environmental Issues Dashboard')
+
 # Fetch data from Flask backend
 response = requests.get('http://127.0.0.1:5000/api/air_pollution')
 data = response.json()
